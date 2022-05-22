@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.exercise {
+  border: 1px solid;
+  padding: 25px;
+  text-align: center;
+  margin: 4px 5px;
+  
+}
+
+.exercise-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.exercise3 {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  padding-top: 10px;
+}
