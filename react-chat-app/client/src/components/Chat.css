@@ -1,0 +1,9 @@
+.chat {
+    margin: 0 auto;
+    text-align: center;
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin-top: 20px;
+}
