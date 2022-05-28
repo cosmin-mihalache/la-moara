@@ -22,7 +22,8 @@ io.on('connection', (socket) => {
 
   socket.emit('connected');
 
-  socket.on('new-message', ({ message }) => {
-    io.emit('received-message', message);
+  socket.on('new-message', ({ sender, message }) => {
+    socket.broadcast.emit('notification', `${sender} send a message!`),
+      io.emit('received-message', `${sender}: ${message}`);
   });
 });
