@@ -6,8 +6,7 @@ const MessageForm = ({ socketConnected }) => {
   const [sender, setSender] = useState('');
 
   const sendMessage = () => {
-    debugger;
-    socketConnected.emit('new-message', message);
+    socketConnected.emit('new-message', { message: `${sender}: ${message}` });
     setMessage('');
   };
 
